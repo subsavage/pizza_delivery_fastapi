@@ -24,3 +24,10 @@ class Config:
             "is_active":True
         }
     }
+
+class Settings(BaseModel):
+    authjwt_secret_key:str='f3682e152ccf17e4ff2b246bb28a8c8e0f37b483c1d5b0dcc9bbe549d5968d72'
+
+class LoginModel(BaseModel):
+    username:str
+    password:str
